@@ -89,5 +89,11 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+
+# FZF keybindings and completion (Fedora)
+[[ -f /usr/share/fzf/shell/key-bindings.zsh ]] && source /usr/share/fzf/shell/key-bindings.zsh
+[[ -f /usr/share/fzf/shell/completion.zsh ]] && source /usr/share/fzf/shell/completion.zsh
+
+# FZF keybindings and completion (MacOS)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
