@@ -15,6 +15,8 @@ fi
 alias ask="codex exec --skip-git-repo-check"
 alias k="kubectl"
 alias cvpn="openvpn3 session-start --config aws"   # works only on Fedora
+alias ls="eza -lh --icons --group-directories-first"
+alias ll="eza -lah --icons --group-directories-first"
 
 
 #######################################
@@ -85,4 +87,7 @@ fi
 #         POWERLEVEL10K CONFIG
 #######################################
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
