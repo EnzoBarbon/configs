@@ -12,11 +12,12 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # Aliases
-alias ask="codex exec --skip-git-repo-check"
-alias k="kubectl"
-alias cvpn="openvpn3 session-start --config aws"   # works only on Fedora
 alias ls="eza -lh --icons --group-directories-first"
 alias ll="eza -lah --icons --group-directories-first"
+alias find-pods="k get pods -A | fzf"
+alias ask="codex exec --skip-git-repo-check"
+alias k="kubectl"
+alias cvpn="openvpn3 session-start --config aws"   
 
 
 #######################################
